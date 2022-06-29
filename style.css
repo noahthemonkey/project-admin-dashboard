@@ -49,10 +49,13 @@ table {
 
 /* -------------------------------------MY CODE BELOW---------------------------------------------- */
 
+
+/* Add global colors maybe */
 #main-container {
     display: grid;
     grid-template-columns: 1fr 4fr;
 	grid-template-rows: 1fr 5fr;
+	font-family: 'Trispace', sans-serif;
 }
 
 
@@ -70,17 +73,104 @@ h1 {
 	display: grid;
 	grid-template-rows: 1fr 2fr 3fr;
 	gap: 10px;
+	text-align: center;
 	
+}
+
+.nav {
+
 }
 
 
 
 
 .top-container {
+	padding: 20px;
+	padding-top: 1rem;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
 	box-shadow: rgba(0, 0, 0, 0.411) 2px 1px 10px;
+}
+.searchbar {
+	padding-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr 20fr;
+	align-content:flex-start;
+	
+	
+}
+input {
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	background-color:#cce0d2 ;
+	width: 90%;
+}
+
+.notif {
+	width: 25rem;
+	display: grid;
+	grid-template-columns: 2fr 3fr 6fr;
+	position: relative;
+	left: 6rem;
+	gap: 10px;
+	align-items: center;
+	margin-bottom: 20px;
+
+}
+.notif > p {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.notif > [src="frog.jpg"] {
+	object-fit: scale-down;
+	height: 50px;
+	border-radius: 50%;
+	border: solid 3px #16a34a7c;;
+}
+
+.welcome {
+	padding-left: 30px;
+	display: grid;
+	grid-template-columns: 1fr 9fr;
+}
+
+.welcome > [src="frog.jpg"] {
+	object-fit: scale-down;
+	height: 70px;
+	border-radius: 50%;
+	border: solid 3px #16a34a7c;;
+}
+
+.welcome > .hi {
+	
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+}
+.mrguy {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+.actionlist{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	
+}
+
+.actionlist > li {
+	background-color: #16a34a;
+	border-radius: 5rem;
+	width: 5rem;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+	font-size: 18px;
+
 }
 
 .feed-container {
@@ -89,7 +179,7 @@ h1 {
 	display: grid;
 	grid-template-columns: 3fr 1fr;
 	padding: 2vh;
-	gap: 20px;
+	gap: 30px;
 }
 
 .projects-container {
@@ -100,11 +190,14 @@ h1 {
 
 }
 [class|=project] {
-	padding: 10px;
+	padding: 20px;
 	border-radius: 20px;	
 	background-color: white;
 	box-shadow: rgba(0, 0, 0, 0.411) 2px 1px 10px;
 
+}
+[class|=project] > h1 {
+	font-weight: bold;
 }
 
 
