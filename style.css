@@ -167,7 +167,7 @@ input {
 .welcome {
 	padding-left: 30px;
 	display: grid;
-	grid-template-columns: 1fr 9fr;
+	grid-template-columns: 1fr 9fr;	
 }
 
 .welcome > [src="frog.jpg"] {
@@ -181,6 +181,7 @@ input {
 	
 	display: grid;
 	grid-template-rows: 1fr 2fr;
+	font-size: 0.9vw;
 }
 .mrfrog {
 	font-size: 1vw;
@@ -212,7 +213,7 @@ input {
 	background-color: #d1fae5;
 	display: grid;
 	grid-template-columns: 3fr 1fr;
-	grid-template-rows: 1rem 5fr;
+	grid-template-rows: 2vh 5fr;
 	padding: 2vh;
 	gap: 15px;
 }
@@ -256,9 +257,11 @@ input {
 
 .news-container{
 	display: grid;
-	grid-template-rows: 5fr 1rem 5fr;
-	gap: 15px;
+	grid-template-rows: 5fr 1vh 5fr;
+	gap: 40px;
 }
+
+
 
 .announcements-container {
 	display: grid;
@@ -292,7 +295,7 @@ input {
 }
 
 .feed-container > h1, .news-container > h1 {
-	font-size: 22px;
+	font-size: 1vw;
 	font-weight: bold;
 }
 
